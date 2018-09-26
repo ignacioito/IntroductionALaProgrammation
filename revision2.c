@@ -7,6 +7,7 @@
 #include<stdlib.h>
 
 
+/*
 int main(int argc, char const *argv[])
 {
 	int n, i = 1, c;
@@ -19,4 +20,25 @@ int main(int argc, char const *argv[])
 		i++;
 	}
 	return 0;
+}
+
+*/
+
+// Programm pour prendre 5 nombres et afficher le nombre de negatifs:
+
+int main(int argc, char const *argv[])
+{
+	int n, i = 1, contNeg;
+
+	while(i <= 5){
+		printf("Donnez un nombre: \n");
+		scanf("%d", &n);
+		if(n < 0){
+		contNeg = contNeg + 1;
+		}
+		i++; 	
+	}
+	
+	printf("Le nombre de nombre negatifs c'est: %d\n", contNeg);
+	
 }
