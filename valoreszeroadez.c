@@ -12,7 +12,7 @@
 
 int main(int argc, char const *argv[])
 {
-	int n, sn = 0, cont = 0, imp = 0;
+	int n, sn = 0, cont = 0, imp = 0, somimp;
 
 	printf("- - - - Conteur des nombres entre 0 et 10 - - - -\n");
 
@@ -22,6 +22,7 @@ int main(int argc, char const *argv[])
 		if ((n >= 0) && (n <= 10)){	
 			if (n % 2 == 1){
 			imp++;
+			somimp = somimp + n;
 		}
 			cont++;
 		}
@@ -29,5 +30,5 @@ int main(int argc, char const *argv[])
 		scanf("%d", &sn);
 	}
 
-	printf("La quantité des nombres entre 0 et 10 sont: %d et les nombres impairs: %d\n", cont, imp);
+	printf("La quantité des nombres entre 0 et 10 sont: %d, la quantité des nombres impairs c'est: %d et la some des nombres impars c'est: %d\n", cont, imp, somimp);
 }
