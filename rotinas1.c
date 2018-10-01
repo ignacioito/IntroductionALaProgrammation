@@ -16,29 +16,30 @@ int main(int argc, char const *argv[])
 	
 	printf("- - - - DETECTOR DE PESADO - - - -\n");
 
-	for(c = 1; c <= 5; c++){
+	for(c = 1; c <= 3; c++){
 	printf("Saisissez votre nom: \n");
-	scanf(" %s\n", &nom);
+	scanf(" %s", &nom);
+	
 	printf("Quel est votre poids?\n");
 	scanf(" %d", &kg);
-	printf("KGS %d\n", kg);
 	if(kg > derniere){
-
-		printf(" teste kilos: %d\n", kg);
 
 		derniere = kg;
 		leger = nom;
+
+	printf("kilos %d\n", derniere);
 	}
 	
 }
-	detector(derniere);
+	detector(leger, derniere);
 }
 
 
 void detector(){
-	int ultimo;
+	int derniere;
+	char leger;
 	printf(" - - - - - - - - - - - - - - - - -\n");
-	printf("Le majeur poid jusqu'à maintenant c'est: %d.\n", ultimo);
+	printf("Le majeur poid jusqu'à maintenant c'est %c com: %d Kilos.\n", leger, derniere);
 	printf("- - - - - - - - - - - - - - - - - -\n");
 }
 
