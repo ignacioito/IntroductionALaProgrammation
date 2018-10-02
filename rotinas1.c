@@ -7,13 +7,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void detector();
+void detector(void);
+
 
 int main(int argc, char const *argv[])
 {
 	char nom, leger;
 	int c, kg, derniere;
-	
+
+		
 	printf("- - - - DETECTOR DE PESADO - - - -\n");
 
 	for(c = 1; c <= 3; c++){
@@ -27,19 +29,19 @@ int main(int argc, char const *argv[])
 		derniere = kg;
 		leger = nom;
 
-	printf("kilos %d\n", derniere);
+	printf("kilos %d\n", kg);
 	}
 	
 }
-	detector(leger, derniere);
+	detector(leger, kg);
 }
 
 
 void detector(){
-	int derniere;
-	char leger;
+	static int kg;
+	static char leger;
 	printf(" - - - - - - - - - - - - - - - - -\n");
-	printf("Le majeur poid jusqu'à maintenant c'est %c com: %d Kilos.\n", leger, derniere);
+	printf("Le majeur poid jusqu'à maintenant c'est %c com: %d Kilos.\n", leger, kg);
 	printf("- - - - - - - - - - - - - - - - - -\n");
 }
 
