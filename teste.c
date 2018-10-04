@@ -16,7 +16,7 @@ Vous n’avez pas `a valider l’entr ́ee de l’usager, il s’agit d’un bon
 Indice : commencez par d ́ecrire le num ́ero de rang ́ee et le num ́ero de colonne de chaque case.*/
 //
 //
-
+// test new commit
 #include <stdlib.h> 
 #include <stdio.h> 
 int main()

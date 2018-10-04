@@ -9,6 +9,12 @@
 
 int main(int argc, char const *argv[])
 {
-	char ig []= {'T','E','S','T'};
-	printf(" %c\n", ig[1]);
+	
 }
+
+
+/*
+#1
+char ig []= {'T','E','S','T'};
+	printf(" %c\n", ig[1]);
+*/
