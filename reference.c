@@ -19,33 +19,50 @@ int pgcd(int a, int b)
 
 void reduire(int* a, int* b)
 {
-int p = pgcd(*a, *b);
-*a /= p;
-*b /= p;
+	int p = pgcd(*a, *b);
+	*a /= p;
+	*b /= p;
 }
 void inverser (int* a, int* b){
 	int temp = *b;
 	*b = *a;
 	*a = temp;
-}
-void ordonner(int* a, int* b, int* c){
 
+}
+void ordonner(int* a, int* b, int* c)
+{
+
+	if(*a > *b)
+	{
+		inverser(a, b);
+	}
+	if (*a > *c)
+	{
+		inverser(a, c);
+	}
+	if(*b > *c)
+	{
+		inverser(b, c);
+	}
+
+}
+
+	//printf("%d %d\n", );
+	//}
 	// abc
 	// acb
 	// bac
 	// bca
 	// cab
 	// cba
-}
-
 
 
 int main()
 {
-int a, b;
-scanf("%d %d", &a, &b);
- reduire(&a, &b);
-printf("%d/%d \n", a, b);
+int a, b, c;
+scanf("%d %d %d", &a, &b, &c);
+ordonner(&a, &b, &c);
+printf("%d - %d - %d\n", a, b, c);
 }
 
 
