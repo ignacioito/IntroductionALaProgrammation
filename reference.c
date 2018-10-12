@@ -23,6 +23,21 @@ int p = pgcd(*a, *b);
 *a /= p;
 *b /= p;
 }
+void inverser (int* a, int* b){
+	int temp = *b;
+	*b = *a;
+	*a = temp;
+}
+void ordonner(int* a, int* b, int* c){
+
+	// abc
+	// acb
+	// bac
+	// bca
+	// cab
+	// cba
+}
+
 
 
 int main()
